@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Card(props) {
+function Card({id, className, onReveal, text}) {
   return (
-    <section id={props.id} 
-      className={props.className} 
-      onClick={props.onReveal}>
-      {props.text}
+    <section id={id} 
+      className={className} 
+      onClick={onReveal}>
+      {text}
     </section>
   );
 }

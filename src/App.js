@@ -6,17 +6,15 @@ import './App.css';
 
 class App extends React.Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       reveal: false
     };
   }
 
   onReveal = (e) => {
-    this.setState(previousState => ({ 
-      reveal: true
-    }));
+    this.setState({reveal: true});
   }
 
   next = (id, score) => {
@@ -25,10 +23,9 @@ class App extends React.Component {
     const previousIdiom = data.find(i => i['idiom'] === id);
     if (previousIdiom) previousIdiom['threshold'] = score;
     
-    const len = data.length;
     let idiom;
     while ( ! idiom) {
-      const randomIdiom = data[parseInt(Math.random() * len)];
+      const randomIdiom = data[parseInt(Math.random() * data.length)];
       const randomChance = Math.random();
       if (randomChance > randomIdiom['threshold']) {
         idiom = randomIdiom['idiom'];

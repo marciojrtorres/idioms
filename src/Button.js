@@ -1,16 +1,12 @@
 import React from 'react';
 
-function Button(props) {
+function Button({kind, onClick, text, emoji}) {
   return (
-    <div className={['Button', props.kind].join(' ')}>
-      <button onClick={props.onClick}>
-        <span role="img" aria-label={props.text}>
-          {props.emoji}
-        </span>
+    <div className={['Button', kind].join(' ')}>
+      <button onClick={onClick}>
+        <span role="img" aria-label={text}>{emoji}</span>
       </button>
-      <span>
-        {props.text}
-      </span>
+      <span>{text}</span>
     </div>
   );
 }
