@@ -1,0 +1,56 @@
+footer {
+    font-size: 1em;
+    transition: opacity ease-in-out 1s;
+}
+
+div.Button > button {
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 2em;
+    background: none;
+}
+
+div.Button > span {         
+    font-family: Arial, Helvetica, sans-serif;   
+    box-sizing: border-box;
+    position: absolute;
+    background: none;
+}
+
+
+
+div.Button.ok > button {
+    bottom: 2em;
+    right: 1em;
+}
+
+div.Button.ok > span {
+    bottom: 1em;
+    right: 2.5em;
+}
+
+
+div.Button.no > button {
+  bottom: 2em;
+  left: 1em;
+}
+
+div.Button.no > span {
+  bottom: 1em;
+  left: 2.5em;
+}
+
+
+div.Button.uh > button {
+  bottom: 2em;
+  left: calc(50% - 32px);     
+}
+
+div.Button.uh > span {
+  bottom: 1em;
+  left: calc(50% - 32px - 0.5em);    
+}
