@@ -14,8 +14,8 @@ div.Button > button {
     background: none;
 }
 
-div.Button > span {         
-    font-family: Arial, Helvetica, sans-serif;   
+div.Button > span {
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     position: absolute;
     background: none;
@@ -23,34 +23,34 @@ div.Button > span {
 
 
 
-div.Button.ok > button {
+div.Button#ok > button {
     bottom: 2em;
     right: 1em;
 }
 
-div.Button.ok > span {
+div.Button#ok > span {
     bottom: 1em;
     right: 2.5em;
 }
 
 
-div.Button.no > button {
+div.Button#no > button {
   bottom: 2em;
   left: 1em;
 }
 
-div.Button.no > span {
+div.Button#no > span {
   bottom: 1em;
   left: 2.5em;
 }
 
 
-div.Button.uh > button {
+div.Button#uh > button {
   bottom: 2em;
-  left: calc(50% - 32px);     
+  left: calc(50% - 32px);
 }
 
-div.Button.uh > span {
+div.Button#uh > span {
   bottom: 1em;
-  left: calc(50% - 32px - 0.5em);    
+  left: calc(50% - 32px - 0.5em);
 }

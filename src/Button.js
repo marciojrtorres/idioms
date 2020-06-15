@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Button({kind, onClick, text, emoji}) {
+function Button({id, onClick, text, emoji}) {
   return (
-    <div className={['Button', kind].join(' ')}>
+    <div id={id} className="Button">
       <button onClick={onClick}>
         <span role="img" aria-label={text}>{emoji}</span>
       </button>

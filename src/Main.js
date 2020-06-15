@@ -6,7 +6,7 @@ function Main({onReveal, reveal, idiom, meaning}) {
   return (
     <main>
       <Card id="idiom" className={reveal ? 'reveal' : ''}
-        onReveal={onReveal}
+        onClick={onReveal}
         text={idiom || 'be my guest'} />
       <Card id="meaning" className={reveal ? "reveal" : "hide"}
         text={meaning || 'do what you want; feel free; help yourself'} />
