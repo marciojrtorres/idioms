@@ -1,9 +1,9 @@
 import React from 'react';
-import './Overlay.scss';
+import './Intro.scss';
 
-function Overlay({onCloseOverlay, onCheck}) {
+function Intro({doCloseIntroScreen, onCheck}) {
   return (
-    <div className="overlay">
+    <div className="intro">
       <div className="content">
         <h2>
           <span role="img" aria-label="cake">🍰</span>
@@ -20,7 +20,7 @@ function Overlay({onCloseOverlay, onCheck}) {
           <input type="checkbox" onChange={onCheck} />
           if you don't want to see this introduction again.
         </p>
-        <button onClick={onCloseOverlay}>
+        <button onClick={doCloseIntroScreen}>
           <span role="img" aria-label="close">
             ✖️
           </span>
@@ -31,4 +31,4 @@ function Overlay({onCloseOverlay, onCheck}) {
   );
 }
 
-export default Overlay;
+export default Intro;
